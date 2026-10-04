@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grace Julius — Human-Centered AI &amp; Cybersecurity</title>
-<meta name="description" content="Grace Julius — practitioner-researcher at Lincoln University of Pennsylvania working at the intersection of human-centered AI/interaction and cybersecurity. Incoming MIT MSRP 2026.">
+<title>Grace Julius — Tech Policy, Ethics &amp; Human-Centered AI</title>
+<meta name="description" content="Grace Julius — researcher at Lincoln University of Pennsylvania studying how technology systems succeed or fail the people they're built for, across tech policy, ethics, computational social science, and human-centered AI. NeurIPS 2026 workshop author; MIT MSRP 2026.">
 
 <!-- ===== Fonts ===== -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,20 +32,38 @@
     <nav aria-label="Primary">
       <ul id="menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#interests">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#work">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#community">Honors</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!-- Résumé: drop your PDF at assets/resume.pdf (already bundled) -->
-    <a class="nav-cta" href="assets/resume.pdf">Résumé ↗</a>
-    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="kbd-btn" id="paletteBtn" type="button" aria-label="Open quick navigation" aria-haspopup="dialog">
+        <span class="kbd-label">Jump to</span><kbd id="kbdHint">⌘K</kbd>
+      </button>
+      <!-- Résumé: keep your PDF at assets/resume.pdf -->
+      <a class="nav-cta" href="assets/resume.pdf">Résumé ↗</a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- Section rail (desktop): a live table of contents -->
+<nav class="rail" id="rail" aria-label="Section index">
+  <a href="#hero" data-label="Intro"></a>
+  <a href="#about" data-label="About"></a>
+  <a href="#interests" data-label="Research interests"></a>
+  <a href="#publications" data-label="Publications &amp; talks"></a>
+  <a href="#work" data-label="Projects"></a>
+  <a href="#experience" data-label="Experience"></a>
+  <a href="#community" data-label="Leadership &amp; honors"></a>
+  <a href="#contact" data-label="Contact"></a>
+</nav>
 
 <main id="main">
 <span id="top"></span>
@@ -57,40 +75,45 @@
       <div class="bar"><i></i><i></i><i></i></div>
       <div class="ln" id="termText"></div>
     </div>
-    <p class="role" data-reveal>Human-Centered AI · Cybersecurity</p>
+    <p class="role" data-reveal>Tech Policy · Ethics · Human-Centered AI</p>
     <h1 data-reveal>Grace <span class="em">Julius</span></h1>
+    <p class="rotate-line" data-reveal>
+      Researching technology &amp;
+      <span class="rotator" id="rotator" aria-hidden="true"><span>justice</span></span>
+      <span class="sr-only">justice, privacy, access, and accountability</span>
+    </p>
     <p class="lede" data-reveal>
-      Between the <b>human</b> and the <b>machine</b> there's a gap — where trust
-      breaks, where bias hides, where attacks slip in. I study that gap and build
-      for it. Computer Science (cybersecurity) at Lincoln University of Pennsylvania,
-      <b>3.98 GPA</b>, headed toward a <b>PhD</b>.
+      I study how technology systems <b>succeed or fail the people they're built for</b> —
+      especially marginalized communities and those on the far side of the
+      <b>digital divide</b> — and how design and policy can make them
+      <b>fair, private, and accountable</b>.
     </p>
     <div class="hero-cta" data-reveal>
-      <a class="btn primary" href="#research">Read the research</a>
-      <a class="btn ghost" href="#work">See what I've built →</a>
+      <a class="btn primary" href="#publications">Read the publications</a>
+      <a class="btn ghost" href="#interests">Explore my research →</a>
     </div>
     <div class="currently" data-reveal>
       <span class="dot"></span>
-      Currently: incoming MIT MSRP '26 · building multimodal AI reasoning benchmarks · applying to PhD programs
+      Now: 2 NeurIPS 2026 workshop papers · MIT MSRP '26 alum · applying to PhD programs
     </div>
   </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
 </section>
 
 <!-- ============================ ABOUT ============================ -->
 <section id="about">
   <div class="wrap">
     <p class="sec-tag" data-reveal>01 — About</p>
-    <h2 class="sec-title" data-reveal>The <span class="em">practitioner</span>-researcher.</h2>
+    <h2 class="sec-title" data-reveal>Who does it <span class="em">serve</span>?</h2>
     <div class="about-grid">
       <div class="about-body">
-        <p data-reveal>I'm a senior Computer Science major (cybersecurity) at <b>Lincoln University of Pennsylvania</b> — the nation's first degree-granting HBCU — and a first-generation graduate-school applicant carrying a <b>3.98 GPA</b>.</p>
-        <p data-reveal>My work lives at the intersection of <b>human-centered AI and cybersecurity</b>: how people perceive, trust, and reason with intelligent systems — and how to make those interactions fair, transparent, and secure. I've built a multimodal reasoning benchmark to probe where vision-language models break down, designed an Ethical AI Dashboard analyzing how students perceive AI, and studied the human attack surface that social engineering exploits.</p>
-        <p data-reveal>I move between the <b>red-team curiosity</b> of breaking things — responsibly disclosing an exposed API key, placing 4th of 50 in an international CTF — and the <b>governance mindset</b> of making systems safe at scale through threat modeling and security awareness programs that actually changed behavior on my campus.</p>
-        <p data-reveal>The long game: a <b>PhD in cybersecurity</b>, where human-centered AI and security meet. This summer I join <b>MIT's Multisensory Intelligence group</b> as an MSRP research scholar. Off the clock — a camera or a tennis court.</p>
+        <p data-reveal>I'm a senior Computer Science major with a <b>minor in Philosophy</b> at <b>Lincoln University of Pennsylvania</b> — the nation's first degree-granting HBCU — carrying a <b>3.98 GPA</b>.</p>
+        <p data-reveal>I care about whether the technology we build is truly <b>considerate of human nature</b>, and about what happens behind the scenes when it isn't. That means bringing people into the design process, asking who gets access and who gets left out, and treating <b>justice and privacy</b> as design requirements rather than afterthoughts. My work sits across <b>tech policy, ethics, computational social science, and human-centered AI</b>.</p>
+        <p data-reveal>That thread runs through everything I've done: a campus phishing study that changed <b>university policy</b>; a survey of how students perceive the <b>fairness and equity</b> of AI; <b>TheBlip</b>, a scam-protection app that warns students in 29 languages because the people most likely to be scammed are often least served by English-only screens; and benchmarks at <b>MIT</b> and Lincoln that test what AI models can actually do — because accountability starts with honest evaluation.</p>
+        <p data-reveal>Philosophy gives me the vocabulary for the questions; computer science lets me test them. Next: a <b>PhD</b>. Off the clock — a camera or a tennis court.</p>
       </div>
       <aside class="about-side" data-reveal>
         <div class="portrait">
-          <!-- Add your photo at assets/grace.jpg. Falls back to your live image, then a monogram. -->
           <img src="assets/grace.jpeg" alt="Portrait of Grace Julius"
                onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://gracejulius.github.io/Images/Grace.jpeg';}else{this.style.display='none';this.parentNode.querySelector('.fallback').style.display='grid';}">
           <div class="frame"></div>
@@ -99,145 +122,280 @@
         <div class="facts">
           <div><span>Location</span><span>Lincoln University, PA</span></div>
           <div><span>Degree</span><span>B.S. Computer Science</span></div>
-          <div><span>Track</span><span>Cybersecurity</span></div>
+          <div><span>Minor</span><span>Philosophy</span></div>
           <div><span>GPA</span><span>3.98</span></div>
-          <div><span>Graduating</span><span>December 2026</span></div>
-          <div><span>Next</span><span>PhD </span></div>
+          <div><span>Graduating</span><span>May 2027</span></div>
+          <div><span>Next</span><span>PhD</span></div>
         </div>
       </aside>
     </div>
 
     <div class="stats">
+      <div class="stat" data-reveal><div class="n" data-count="2">0</div><div class="l">NeurIPS 2026 workshop papers (FMTS · MATH-AI)</div></div>
+      <div class="stat" data-reveal><div class="n" data-count="4">0</div><div class="l">accepted papers — NeurIPS workshops, SEET, ICTES</div></div>
       <div class="stat" data-reveal><div class="n" data-count="3.98">0</div><div class="l">cumulative GPA in Computer Science</div></div>
-      <div class="stat" data-reveal><div class="n">4<span style="font-size:1.4rem">th</span></div><div class="l">of 50 — WiCyS × Tenable × AWS Exposure Quest CTF (intl.)</div></div>
-      <div class="stat" data-reveal><div class="n">1<span style="font-size:1.4rem">st</span></div><div class="l">HP Future of Work Academy — led a team of 9</div></div>
-      <div class="stat" data-reveal><div class="n">MIT</div><div class="l">incoming MSRP '26 research scholar</div></div>
+      <div class="stat" data-reveal><div class="n">MIT</div><div class="l">MSRP '26 research scholar, Media Lab</div></div>
     </div>
   </div>
 </section>
 
-<!-- ============================ FOCUS PILLARS ============================ -->
-<section id="focus" style="padding-top:0">
+<!-- ============================ RESEARCH INTERESTS ============================ -->
+<section id="interests" style="padding-top:0">
   <div class="wrap">
-    <p class="sec-tag" data-reveal>02 — What I work on</p>
-    <h2 class="sec-title" data-reveal>The <span class="em">human</span> in the loop.</h2>
-    <div class="pillars">
-      <div class="pillar" data-reveal>
-        <div class="ix">[ 01 ]</div>
-        <h3>Human-centered AI &amp; interaction</h3>
-        <p>How people perceive, trust, and reason alongside AI — and where models fall short of human reasoning. Multimodal benchmarks, AI fairness &amp; transparency, perception studies.</p>
-      </div>
-      <div class="pillar" data-reveal>
-        <div class="ix">[ 02 ]</div>
-        <h3>Social engineering &amp; the human attack surface</h3>
-        <p>Why smart people still click. Phishing studies, awareness interventions, and the behavioral side of why breaches so often start with people, not code.</p>
-      </div>
-      <div class="pillar" data-reveal>
-        <div class="ix">[ 03 ]</div>
-        <h3>Security, risk &amp; governance</h3>
-        <p>Turning findings into protection. Threat modeling (STRIDE), vulnerability and exposure analysis, responsible disclosure, and incident response.</p>
-      </div>
+    <p class="sec-tag" data-reveal>02 — Research interests</p>
+    <h2 class="sec-title" data-reveal>Four lenses, <span class="em">one question</span>.</h2>
+    <p class="sec-intro" data-reveal>Pick a lens to see the papers and talks behind it.</p>
+    <div class="pillars four">
+      <button class="pillar" type="button" data-theme="policy" data-reveal>
+        <span class="ix">[ 01 ]</span>
+        <span class="ph">Tech Policy</span>
+        <span class="pp">How institutions govern technology — and how evidence changes those rules. My phishing research became mandatory onboarding at Lincoln.</span>
+        <span class="go">See related work →</span>
+      </button>
+      <button class="pillar" type="button" data-theme="ethics" data-reveal>
+        <span class="ix">[ 02 ]</span>
+        <span class="ph">Ethics</span>
+        <span class="pp">Fairness, transparency, and privacy as design requirements. Who is harmed, who consents, and who is accountable when systems fail.</span>
+        <span class="go">See related work →</span>
+      </button>
+      <button class="pillar" type="button" data-theme="css" data-reveal>
+        <span class="ix">[ 03 ]</span>
+        <span class="ph">Computational Social Science</span>
+        <span class="pp">Measuring how people actually experience technology — surveys, sentiment analysis, and field studies of real communities.</span>
+        <span class="go">See related work →</span>
+      </button>
+      <button class="pillar" type="button" data-theme="hcai" data-reveal>
+        <span class="ix">[ 04 ]</span>
+        <span class="ph">Human-Centered AI</span>
+        <span class="pp">Putting people in the design loop, and evaluating AI honestly — what models can really do, across languages, senses, and modalities.</span>
+        <span class="go">See related work →</span>
+      </button>
     </div>
   </div>
 </section>
 
-<!-- ============================ RESEARCH ============================ -->
-<section id="research">
+<!-- ============================ PUBLICATIONS ============================ -->
+<section id="publications">
   <div class="wrap">
-    <p class="sec-tag" data-reveal>03 — Research &amp; Publications</p>
-    <h2 class="sec-title" data-reveal>Selected <span class="em">research</span>.</h2>
-    <div class="research-list">
+    <p class="sec-tag" data-reveal>03 — Publications &amp; Talks</p>
+    <h2 class="sec-title" data-reveal>On the <span class="em">record</span>.</h2>
 
-      <article class="research-item" data-reveal>
-        <div class="yr">2026</div>
-        <div>
-          <h3>MMRB — Can VLMs Reason About Graphs?</h3>
-          <p>A multimodal reasoning benchmark testing how vision-language models (Gemma 3, Qwen3-VL, Llama 3.2 Vision) handle structured, multi-step decision tasks. Generated 450 synthetic visual datasets with Python, NetworkX &amp; Matplotlib, and built evaluation pipelines across reasoning categories like connectivity and path inference.</p>
-          <p class="cite">Julius, G. &amp; Dr. Samizadeh, M. — Undergraduate Research Symposium, Lincoln University of PA, Apr 2026.</p>
-          <div class="tags"><span class="tag hot">Human-centered AI</span><span class="tag">VLMs</span><span class="tag">Python · NetworkX</span><span class="tag">Benchmarking</span></div>
-        </div>
-        <div class="status">// presented</div>
-      </article>
-
-      <article class="research-item" data-reveal>
-        <div class="yr">2025</div>
-        <div>
-          <h3>Ethical AI Dashboard</h3>
-          <p>A faculty-mentored study on the ethical use of AI in higher education. Designed survey instruments on AI fairness, transparency, and academic impact; collected 70+ student responses; and built a web dashboard running real-time NLP sentiment analysis to surface ethical-AI concerns across disciplines.</p>
-           <p class="cite">Julius, G. &amp; Dr. Tiffanie, R. Smith. </p>
-          <div class="tags"><span class="tag hot">AI ethics</span><span class="tag">NLP / sentiment</span><span class="tag">Survey methods</span><span class="tag">Data viz</span></div>
-        </div>
-        <div class="status">// study</div>
-      </article>
-
-      <article class="research-item" data-reveal>
-        <div class="yr">2024</div>
-        <div>
-          <h3>CyberLions — Defending an HBCU Community</h3>
-          <p>Cybersecurity-awareness research across the campus. A phishing study of 122 first-year students (avg. 4 phishing attempts/month) led to mandatory awareness sessions — backed by 90% of freshmen and followed by a ~60% improvement in the next cohort. Expanded to a 100+ faculty/staff threat assessment uncovering up to 45% critical vulnerabilities.</p>
-          <p class="cite">Julius, G. &amp; Dr. Tawose, O. T. — presented at ABRCMS 2024; Undergraduate Research Symposium &amp; Annual Science Fair, Lincoln University of PA, 2024.</p>
-          <div class="tags"><span class="tag">Social engineering</span><span class="tag">Field study</span><span class="tag">Threat assessment</span></div>
-        </div>
-        <div class="status">// foundation</div>
-      </article>
-
+    <div class="pub-controls" data-reveal>
+      <div class="filters" id="pubFilters" role="group" aria-label="Filter by type">
+        <button class="on" data-type="all">All</button>
+        <button data-type="workshop">NeurIPS 2026</button>
+        <button data-type="proceedings">Proceedings</button>
+        <button data-type="review">Under review</button>
+        <button data-type="talk">Talks &amp; posters</button>
+      </div>
+      <div class="theme-pill" id="themePill" hidden>
+        Lens: <b id="themePillName"></b>
+        <button type="button" id="themeClear" aria-label="Clear research lens filter">✕</button>
+      </div>
     </div>
+    <p class="pub-count" id="pubCount" aria-live="polite"></p>
+
+    <ol class="pub-list" id="pubList">
+
+      <li class="pub" data-type="workshop" data-themes="hcai css" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">NeurIPS 2026 Workshop</span><span class="badge-status ok">Accepted</span></div>
+          <h3>Sensing the Past with Smell</h3>
+          <p class="authors">Joseph Firmansyah, <b>Grace Julius</b>, Ana Julia Santo Lopes, Ruslan Salakhutdinov, Paul Pu Liang</p>
+          <p class="venue">NeurIPS 2026 Workshop on Foundation Models for Time Series (FMTS)</p>
+          <details>
+            <summary>Summary</summary>
+            <p>Can a machine tell what <i>used to be</i> in a room? We introduce SmellPast, an olfactory benchmark tracking lingering odor decay across 50+ hours of controlled trials — up to 2 hours after source removal — for rosemary, paprika, black pepper, and nutmeg against negative-control baselines, plus ML models that classify removed substances from residual traces. Built at the MIT Media Lab's Multisensory Intelligence group.</p>
+          </details>
+          <div class="pub-actions">
+            <button class="mini-btn" data-cite="J. Firmansyah, G. Julius, A. J. Santo Lopes, R. Salakhutdinov, and P. P. Liang. Sensing the Past with Smell. NeurIPS 2026 Workshop on Foundation Models for Time Series (FMTS), 2026.">Copy citation</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="workshop" data-themes="hcai ethics" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">NeurIPS 2026 Workshop</span><span class="badge-status ok">Accepted</span></div>
+          <h3>MMGO-Bench: A Multimodal Graph Optimization Benchmark</h3>
+          <p class="authors">Mina Samizadeh, <b>Grace Julius</b></p>
+          <p class="venue">NeurIPS 2026 Workshop on Mathematical Reasoning and AI (MATH-AI)</p>
+          <details>
+            <summary>Summary</summary>
+            <p>Can vision-language models solve weighted shortest-path problems straight from a picture of a graph? MMGO-Bench isolates layout style, node-label format, textual edge support, and prompting strategy across 90 graph instances in three difficulty tiers — 43,200 multimodal and 1,080 text-only trials over five models (Gemma 3, Qwen2.5-VL, LLaVA, MiniCPM-V, Claude Haiku). Honest benchmarks are how we hold capability claims accountable.</p>
+          </details>
+          <div class="pub-actions">
+            <button class="mini-btn" data-cite="M. Samizadeh and G. Julius. MMGO-Bench: A Multimodal Graph Optimization Benchmark. NeurIPS 2026 Workshop on Mathematical Reasoning and AI (MATH-AI), 2026.">Copy citation</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="proceedings" data-themes="ethics policy" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">SEET 2026</span><span class="badge-status ok">Accepted · oral</span></div>
+          <h3>Comparative Study of Security Testing Tools for Distributed Web Applications</h3>
+          <p class="authors">Bouchaib Falah, <b>Grace Julius</b> (presenter), Chinyere Offor, Onyedikachi Kanu</p>
+          <p class="venue">Proceedings of the 2nd International Conference on Software Engineering for Emerging Technologies, Aug 2026 · in production</p>
+          <div class="pub-actions">
+            <button class="mini-btn" data-cite="B. Falah, G. Julius, C. Offor, and O. Kanu. Comparative Study of Security Testing Tools for Distributed Web Applications. In Proceedings of the 2nd International Conference on Software Engineering for Emerging Technologies (SEET), 2026.">Copy citation</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="proceedings" data-themes="policy" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">ICTES 2026</span><span class="badge-status ok">Accepted</span></div>
+          <h3>Bridging Theory and Practice: Essential Software Testing Techniques for Undergraduate Computer Science Students</h3>
+          <p class="authors">Bouchaib Falah, <b>Grace Julius</b>, Sameer Abufardeh</p>
+          <p class="venue">Proceedings of the International Conference on Teaching and Education Sciences · in production</p>
+          <div class="pub-actions">
+            <button class="mini-btn" data-cite="B. Falah, G. Julius, and S. Abufardeh. Bridging Theory and Practice: Essential Software Testing Techniques for Undergraduate Computer Science Students. In Proceedings of the International Conference on Teaching and Education Sciences (ICTES), 2026.">Copy citation</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="review" data-themes="ethics css hcai policy" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">Journal · BEST</span><span class="badge-status wait">Under review</span></div>
+          <h3>PRIDE in Higher Ed: Perception of Responsible Artificial Intelligence and Digital Ethics in Higher Education</h3>
+          <p class="authors"><b>Grace Julius</b>, Tiffanie Smith</p>
+          <p class="venue">Journal of Black Excellence in Engineering, Science and Technology — Special Issue: AI Beyond Reach: Community-Focused Solutions</p>
+          <details>
+            <summary>Summary</summary>
+            <p>A survey of 70+ undergraduates on algorithmic fairness, transparency, and institutional AI policy, paired with a dashboard that uses VADER sentiment analysis to surface the ethical concerns students raise across disciplines.</p>
+          </details>
+          <div class="pub-actions">
+            <button class="mini-btn" data-cite="G. Julius and T. Smith. PRIDE in Higher Ed: Perception of Responsible Artificial Intelligence and Digital Ethics in Higher Education. Under review, Journal of Black Excellence in Engineering, Science and Technology (BEST), Special Issue on AI Beyond Reach: Community-Focused Solutions.">Copy citation</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="talk" data-themes="hcai css" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">Oral + poster</span></div>
+          <h3>Sensing the Past with Smell</h3>
+          <p class="venue">Oral presentation to MIT Media Lab researchers · Poster, MIT Summer Research Program Research Forum, Aug 2026</p>
+        </div>
+      </li>
+
+      <li class="pub" data-type="talk" data-themes="ethics css hcai" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">Poster</span><span class="badge-status wait">Upcoming · Dec 2026</span></div>
+          <h3>PRIDE in Higher Ed: Perception of Responsible Artificial Intelligence and Digital Ethics in Higher Education</h3>
+          <p class="venue">Selected student poster, Middle States Commission on Higher Education (MSCHE) Annual Conference · Co-authored poster also presented by Dr. Tiffanie Smith at the National Symposium on Effective and Ethical AI, Morgan State University</p>
+        </div>
+      </li>
+
+      <li class="pub" data-type="talk" data-themes="hcai" data-reveal>
+        <div class="pub-yr">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">Poster</span></div>
+          <h3>Can VLMs Reason About Graphs? Introducing MMRB, a Multimodal Reasoning Benchmark</h3>
+          <p class="authors"><b>Grace Julius</b>, Mina Samizadeh</p>
+          <p class="venue">Undergraduate Research Symposium, Lincoln University of Pennsylvania, Apr 2026</p>
+        </div>
+      </li>
+
+      <li class="pub" data-type="talk" data-themes="policy css ethics" data-reveal>
+        <div class="pub-yr">2024</div>
+        <div class="pub-body">
+          <div class="pub-badges"><span class="badge-venue">ABRCMS 2024</span><span class="badge-status ok">3rd place · Science Fair</span></div>
+          <h3>CyberLions: Empowering University Students, Faculty &amp; Staff in the Battle Against Digital Threats</h3>
+          <p class="authors"><b>Grace Julius</b>, O. T. Tawose</p>
+          <p class="venue">Annual Biomedical Research Conference for Minoritized Scientists (Nov 2024) · Lincoln University Annual Science Fair (Nov 2024) · Undergraduate Research Symposium (Apr 2024)</p>
+          <details>
+            <summary>Summary</summary>
+            <p>Phase 1 measured phishing exposure for 122 first-year students (about 4 phishing emails a month) and led campus IT to adopt mandatory onboarding training, which reduced vulnerability by 60% the following year. Phase 2 extended the assessment to 100+ faculty and staff and found a 45% susceptibility rate to targeted spear-phishing.</p>
+          </details>
+        </div>
+      </li>
+
+    </ol>
   </div>
 </section>
 
 <!-- ============================ WORK ============================ -->
 <section id="work">
   <div class="wrap">
-    <p class="sec-tag" data-reveal>04 — Selected Work</p>
+    <p class="sec-tag" data-reveal>04 — Projects</p>
     <h2 class="sec-title" data-reveal>Things I've <span class="em">built &amp; broken</span>.</h2>
-    <div class="filters" data-reveal id="filters">
+
+    <!-- Featured: TheBlip -->
+    <article class="feature" data-reveal>
+      <div class="feature-main">
+        <div class="top"><span class="kind">Main Developer · SteelHacks · Sep 2026</span><span class="award">Featured</span></div>
+        <h3>TheBlip</h3>
+        <p class="feature-tag">The small mistake that snowballs if nobody catches it early.</p>
+        <p>College is often the first time students handle their own money, and scammers know it — Americans reported about $16 billion lost to fraud in 2025, mostly to imposter scams. TheBlip is one app that helps students check a scam text, pause before sending money, see what a credit-card offer <i>really</i> costs, and recover after being scammed — built so a bank could plug it in through a partner API, widget, and signed webhooks.</p>
+        <p>Its warnings work in <b>29 languages</b>, are read aloud in 25, and are built for screen readers and keyboards — because the people most likely to be scammed are often the least served by English-only screens. One rule we never broke: <b>the AI reads and explains; our code does the math.</b></p>
+        <div class="meta">// Next.js · Claude · NVIDIA Nemotron · ElevenLabs · Postgres (Tiger Cloud) · DigitalOcean</div>
+        <div class="feature-links">
+          <a class="mini-btn" href="https://devpost.com/software/theblip" target="_blank" rel="noopener">Devpost ↗</a>
+          <a class="mini-btn" href="https://theblip.tech" target="_blank" rel="noopener">theblip.tech ↗</a>
+        </div>
+      </div>
+      <aside class="feature-side">
+        <p class="mini">We measured our own scam check</p>
+        <p class="feature-note">483 synthetic messages, including messages in 8 languages; a held-out set scored once.</p>
+        <div class="meter">
+          <div class="meter-row"><span>Scams caught</span><span class="meter-vals"><s>74%</s> → <b>100%</b></span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="100"></div><div class="bar-ghost" style="width:74%"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-row"><span>False alarms</span><span class="meter-vals"><s>6%</s> → <b>8%</b></span></div>
+          <div class="bar-track"><div class="bar-fill warn" data-w="8"></div><div class="bar-ghost" style="width:6%"></div></div>
+        </div>
+        <p class="feature-note">The first design missed <b>42% of non-English scams</b> — a message with no keyword hit never reached the AI. We fixed it, and we published our limits: synthetic data, a small test split, no adversarial testing yet.</p>
+      </aside>
+    </article>
+
+    <div class="filters" data-reveal id="filters" role="group" aria-label="Filter projects">
       <button class="on" data-filter="all">All</button>
-      <button data-filter="ai">HCI &amp; AI</button>
+      <button data-filter="equity">Equity &amp; access</button>
       <button data-filter="security">Security</button>
       <button data-filter="build">Build</button>
     </div>
     <div class="work-grid" id="workGrid">
 
-      <article class="card" data-cat="build ai" data-reveal>
+      <article class="card" data-cat="build equity" data-reveal>
         <div class="top"><span class="kind">Founder &amp; Developer</span></div>
         <h3>ClassCritics</h3>
-        <p>A full-stack web app — built in 24 hours with Claude Code and Emergent — letting students anonymously review professors and courses, with real-time chat, community voting, and threaded discussions. Next.js frontend on Vercel, backend on Render with MongoDB Atlas and WebSocket course rooms.</p>
-        <div class="meta">// Next.js · MongoDB · WebSockets · 2026</div>
+        <p>A full-stack platform — built in 24 hours with Claude Code and Emergent — letting Lincoln students anonymously review professors and courses, with real-time course chat rooms, community voting, and threaded discussions.</p>
+        <div class="meta">// Next.js · MongoDB Atlas · WebSockets · 2026</div>
       </article>
 
-      <article class="card" data-cat="security ai" data-reveal>
+      <article class="card" data-cat="build equity" data-reveal>
+        <div class="top"><span class="kind">Frontend Lead</span></div>
+        <h3>LionRide</h3>
+        <p>A ride-sharing web app for the Lincoln University community. Led frontend development from requirements gathering through deployment, and co-designed the REST API with the backend developer.</p>
+        <div class="meta">// Next.js · PostgreSQL · Google Maps API · 2025</div>
+      </article>
+
+      <article class="card" data-cat="security" data-reveal>
         <div class="top"><span class="kind">CTF · Competition</span><span class="award">4th / 50 · Intl.</span></div>
         <h3>Exposure Quest CTF</h3>
-        <p>Placed 4th of 50 selected participants in a 3-day international CTF (WiCyS × Tenable × AWS) — solving challenges across OSINT, web exploitation, cloud security, exposure management, and AI-driven security using Tenable One and Nessus Essentials.</p>
+        <p>Placed 4th of 50 selected participants in a 3-day international CTF (WiCyS × Tenable × AWS) — OSINT, web exploitation, cloud security, exposure management, and AI-driven security.</p>
         <div class="meta">// OSINT · web exploit · cloud · 2026</div>
       </article>
 
-      <article class="card" data-cat="security" data-reveal>
+      <article class="card" data-cat="security equity" data-reveal>
         <div class="top"><span class="kind">Threat Modeling</span></div>
         <h3>SafeU IoT — STRIDE &amp; IRP</h3>
-        <p>A full STRIDE threat model of a prototype wearable IoT device, paired with an Incident Response Plan. Designed mitigations spanning AES-256 encryption, MFA, RBAC, and SIEM monitoring — turning a device concept into a defensible security posture.</p>
+        <p>A full STRIDE threat model and Incident Response Plan for a prototype personal-safety wearable — mitigations spanning AES-256 encryption, MFA, RBAC, and SIEM monitoring.</p>
         <div class="meta">// STRIDE · AES-256 · RBAC · SIEM</div>
       </article>
 
-      <article class="card" data-cat="security" data-reveal>
-        <div class="top"><span class="kind">Responsible Disclosure</span></div>
-        <h3>The exposed API key</h3>
-        <p>Found a live API key leaking through browser dev tools on a university system, then drove it through a full responsible-disclosure process with my faculty mentor. The story I tell in every application — proof that I look where others don't, and report what I find.</p>
-        <div class="meta">// real-world find · ethics-first</div>
-      </article>
-
-      <article class="card" data-cat="ai security build" data-reveal>
+      <article class="card" data-cat="security build equity" data-reveal>
         <div class="top"><span class="kind">Cybersecurity Manager</span><span class="award">1st Place</span></div>
         <h3>Secure AI Support Chatbot</h3>
-        <p>Led a team of 9 at the HP Future of Work Academy to build a GPT-powered chatbot that improved HBCU student support by 30% — and won 1st place. Authored a secure-AI-deployment framework incorporating federated learning and differential privacy that the team adopted.</p>
-        <div class="meta">// secure AI · federated learning · 2024</div>
-      </article>
-
-      <article class="card" data-cat="build security" data-reveal>
-        <div class="top"><span class="kind">Software · Data Science</span></div>
-        <h3>Women's Safety Wearable — Web App</h3>
-        <p>Built the web platform for a wearable device designed to enhance personal safety for women, focused on real-time data processing and security in JavaScript, and applied data-science techniques to preprocess datasets and improve device performance.</p>
-        <div class="meta">// JavaScript · real-time · 2025</div>
+        <p>Led a team of 9 at the HP Future of Work Academy to build a GPT-powered support chatbot for HBCU students — and won. Authored a secure-AI-deployment framework using federated learning and differential privacy.</p>
+        <div class="meta">// secure AI · privacy · 2024</div>
       </article>
 
     </div>
@@ -252,52 +410,52 @@
     <div class="timeline">
 
       <div class="tl up" data-reveal>
-        <div class="when">Jun – Aug 2026 <span class="badge">Incoming</span></div>
-        <h3>Research Intern — MIT MSRP 2026</h3>
-        <div class="org">MIT Media Lab · Multisensory Intelligence Group · with Prof. Paul Liang</div>
-        <p>Selected for MIT's Summer Research Program to conduct undergraduate research in multisensory and multimodal intelligence.</p>
-      </div>
-
-      <div class="tl up" data-reveal>
-        <div class="when">May – Jun 2026 <span class="badge">Incoming</span></div>
-        <h3>Cyberinfrastructure Intern — ACCESS STEP-1</h3>
-        <div class="org">Univ. of Illinois Urbana-Champaign (hosted at FIU)</div>
-        <p>Configuring Linux environments and Git/GitHub workflows across HPC and cluster systems; monitoring network performance with perfSONAR; exploring Science DMZ design, TCP dynamics, CI/CD, cloud, containers, and Science Gateways.</p>
+        <div class="when">Jun – Aug 2026 <span class="badge">NeurIPS workshop</span></div>
+        <h3>Research Intern — MIT Summer Research Program</h3>
+        <div class="org">MIT Media Lab · Multisensory Intelligence Group · Mentor: Prof. Paul Pu Liang</div>
+        <p>Built SmellPast, an olfactory benchmark for detecting removed substances from residual odor traces, and an interactive dashboard tracking sensor drift and chemical decay in real time. Delivered an oral presentation at the Media Lab and a poster at the MSRP Research Forum.</p>
       </div>
 
       <div class="tl" data-reveal>
-        <div class="when">Dec 2025 – Apr 2026</div>
+        <div class="when">May – Jun 2026</div>
+        <h3>Cyberinfrastructure Research Intern — ACCESS STEP-1</h3>
+        <div class="org">Univ. of Illinois Urbana-Champaign (hosted at FIU)</div>
+        <p>Configured research-grade Linux clusters and CI/CD workflows; evaluated Science DMZ architecture and analyzed TCP window dynamics and bottlenecks with perfSONAR telemetry.</p>
+      </div>
+
+      <div class="tl up" data-reveal>
+        <div class="when">Dec 2025 – Apr 2026 <span class="badge">NeurIPS workshop</span></div>
         <h3>Undergraduate AI Researcher — Multimodal Reasoning</h3>
-        <div class="org">Lincoln University of Pennsylvania</div>
-        <p>Designed and built MMRB, evaluating modern VLMs on structured multi-step reasoning; generated 450 synthetic datasets and Python evaluation pipelines; presented findings at the 2026 Undergraduate Research Symposium.</p>
+        <div class="org">Lincoln University of Pennsylvania · Mentor: Dr. Mina Samizadeh</div>
+        <p>Developed MMGO-Bench and the Python evaluation pipelines behind 43,200 multimodal trials across five vision-language models.</p>
       </div>
 
       <div class="tl" data-reveal>
         <div class="when">Jun – Nov 2025</div>
         <h3>AI Research Intern — Ethical AI Dashboard</h3>
-        <div class="org">Lincoln University of Pennsylvania (Remote)</div>
-        <p>Developed a web-based Ethical AI Dashboard analyzing 70+ student survey responses with real-time sentiment analysis and visualization; designed instruments measuring perceptions of AI fairness, transparency, and academic impact.</p>
+        <div class="org">Lincoln University of Pennsylvania · Mentor: Dr. Tiffanie Smith</div>
+        <p>Designed a survey instrument on algorithmic fairness, transparency, and institutional AI policy (70+ students) and built a VADER-based sentiment dashboard surfacing ethical concerns across disciplines.</p>
       </div>
 
       <div class="tl" data-reveal>
         <div class="when">May 2025 – Present</div>
-        <h3>Student Technician</h3>
+        <h3>Student IT Technician</h3>
         <div class="org">Office of Information Technology · Lincoln University</div>
-        <p>Resolved 100+ support tickets at 85% first-contact resolution; shadowed a network engineer on fiber-optic cabling for commencement; responsibly disclosed an exposed API key; document and escalate security incidents; manage the university website via Cascade CMS.</p>
+        <p>Resolve hardware, software, and network tickets across campus; and manage institutional web content via Cascade CMS.</p>
+      </div>
+
+      <div class="tl" data-reveal>
+        <div class="when">Oct 2023 – Aug 2024</div>
+        <h3>Undergraduate Cybersecurity Researcher — CyberLions</h3>
+        <div class="org">Lincoln University of Pennsylvania · Mentor: Dr. Olamide Tawose</div>
+        <p>Ran phishing-susceptibility assessments for 122 first-years and 100+ faculty and staff; findings led to mandatory onboarding training adopted by campus IT.</p>
       </div>
 
       <div class="tl" data-reveal>
         <div class="when">Jul – Sep 2024</div>
         <h3>Cybersecurity Manager</h3>
         <div class="org">HP Future of Work Academy Incubator (Remote)</div>
-        <p>Led a 9-person team to a 1st-place finish building a secure GPT support chatbot, and authored a secure-AI-deployment framework using federated learning and differential privacy.</p>
-      </div>
-
-      <div class="tl" data-reveal>
-        <div class="when">Oct 2023 – Aug 2024</div>
-        <h3>Cybersecurity Research Intern</h3>
-        <div class="org">Lincoln University of Pennsylvania</div>
-        <p>Ran the CyberLions phishing study (122 first-years) and faculty/staff threat assessment (100+, up to 45% critical vulnerabilities); proposed awareness programs later adopted by the Office of IT.</p>
+        <p>Led a 9-person team to a 1st-place finish building a secure GPT support chatbot for HBCU students.</p>
       </div>
 
     </div>
@@ -314,7 +472,11 @@
         <p class="mini">Leadership &amp; Community</p>
         <div class="lead-item">
           <span class="role">2026 – Now</span>
-          <div><h4>President — NSBE, Lincoln Chapter</h4><p>Leading Lincoln's National Society of Black Engineers chapter; competed at the 2026 National Convention.</p></div>
+          <div><h4>President — NSBE, Lincoln Chapter</h4><p>Leading Lincoln's National Society of Black Engineers chapter.</p></div>
+        </div>
+        <div class="lead-item">
+          <span class="role">2026</span>
+          <div><h4>Stanford SERGE · TMCF Leadership Institute</h4><p>Selected participant — Stanford Exposure to Research and Graduate Education; Thurgood Marshall College Fund Leadership Institute.</p></div>
         </div>
         <div class="lead-item">
           <span class="role">2024 – 25</span>
@@ -333,27 +495,31 @@
         <p class="mini">Honors &amp; Recognition</p>
         <div class="honor-item">
           <span class="yr">2026</span>
-          <div><h4>Goro Nagase Endowed Scholarship</h4><p>For Mathematics &amp; Computer Science (2026–2027).</p></div>
+          <div><h4>Goro Nagase Endowed Scholarship</h4><p>For Mathematics &amp; Computer Science.</p></div>
         </div>
         <div class="honor-item">
           <span class="yr">2025</span>
-          <div><h4>Provost Award</h4><p>Lincoln University, 2025–2026 — for academic excellence.</p></div>
+          <div><h4>Provost Award</h4><p>Lincoln University, 2025–2026.</p></div>
         </div>
         <div class="honor-item">
           <span class="yr">2025</span>
           <div><h4>Splunk HBCU Academic Scholarship</h4><p>$10,000 recipient.</p></div>
         </div>
         <div class="honor-item">
-          <span class="yr">2026</span>
-          <div><h4>WiCyS Conference Scholarship</h4><p>Full scholarship to attend WiCyS 2026.</p></div>
+          <span class="yr">2023 –</span>
+          <div><h4>International Student Scholarship</h4><p>Full tuition, Lincoln University of Pennsylvania.</p></div>
         </div>
         <div class="honor-item">
           <span class="yr">2025</span>
-          <div><h4>HBCU Battle of the Brains — 3rd Place</h4><p>Led a team of 5; earned departmental recognition.</p></div>
+          <div><h4>HBCU Battle of the Brains — 3rd Place</h4><p>Led a team of 5; departmental and university recognition.</p></div>
         </div>
         <div class="honor-item">
           <span class="yr">2024</span>
-          <div><h4>Women in Cloud Cybersecurity Scholarship</h4><p>2024 recipient.</p></div>
+          <div><h4>HP Future of Work Academy — Winner</h4><p>Led a team of 9.</p></div>
+        </div>
+        <div class="honor-item">
+          <span class="yr">2024</span>
+          <div><h4>Science Fair 3rd Place · Women in Cloud Scholarship</h4><p>Lincoln University Annual Science Fair; Women in Cloud cybersecurity scholarship.</p></div>
         </div>
       </div>
     </div>
@@ -363,20 +529,20 @@
       <p class="mini" data-reveal>Toolkit</p>
       <div class="skills-grid">
         <div class="skillset" data-reveal>
-          <h4>Cybersecurity &amp; Risk</h4>
-          <div class="chips"><span class="chip">Threat Modeling (STRIDE)</span><span class="chip">Vulnerability Analysis</span><span class="chip">Incident Response</span><span class="chip">SIEM</span><span class="chip">RBAC · DLP</span><span class="chip">Phishing Analysis</span></div>
+          <h4>Research Methods</h4>
+          <div class="chips"><span class="chip">Survey Design</span><span class="chip">Field Studies</span><span class="chip">Benchmark Design</span><span class="chip">Sentiment Analysis (VADER)</span><span class="chip">Evaluation Pipelines</span><span class="chip">Data Visualization</span></div>
         </div>
         <div class="skillset" data-reveal>
-          <h4>Tools &amp; Platforms</h4>
-          <div class="chips"><span class="chip">Tenable One</span><span class="chip">Nessus</span><span class="chip">Wireshark</span><span class="chip">Nmap</span><span class="chip">perfSONAR</span><span class="chip">Cascade CMS</span><span class="chip">AWS</span><span class="chip">Git</span></div>
+          <h4>AI &amp; Data</h4>
+          <div class="chips"><span class="chip">VLM Benchmarking</span><span class="chip">Claude API</span><span class="chip">Pandas</span><span class="chip">NetworkX · Matplotlib</span><span class="chip">Gemma · Qwen · LLaVA</span></div>
         </div>
         <div class="skillset" data-reveal>
-          <h4>Languages &amp; Frameworks</h4>
-          <div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">Next.js</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Bash · Linux</span><span class="chip">HTML · CSS</span></div>
+          <h4>Security &amp; Systems</h4>
+          <div class="chips"><span class="chip">Threat Modeling (STRIDE)</span><span class="chip">Tenable One · Nessus</span><span class="chip">Wireshark · Nmap</span><span class="chip">perfSONAR</span><span class="chip">HPC Clusters</span><span class="chip">Linux</span></div>
         </div>
         <div class="skillset" data-reveal>
-          <h4>AI, Research &amp; Networking</h4>
-          <div class="chips"><span class="chip">VLMs · Multimodal</span><span class="chip">NLP Sentiment</span><span class="chip">NetworkX · Matplotlib</span><span class="chip">Survey Design</span><span class="chip">TCP/IP · DNS</span><span class="chip">HPC / Cluster</span><span class="chip">CompTIA Network+ (in progress)</span></div>
+          <h4>Languages &amp; Web</h4>
+          <div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">Next.js · React</span><span class="chip">Node.js</span><span class="chip">PostgreSQL · MongoDB</span></div>
         </div>
       </div>
     </div>
@@ -387,8 +553,8 @@
 <section id="contact" class="contact">
   <div class="wrap">
     <p class="sec-tag" data-reveal style="justify-content:center">07 — Contact</p>
-    <h2 class="big" data-reveal>Let's build something <span class="em">trustworthy</span>.</h2>
-    <p data-reveal style="color:var(--text-dim);max-width:560px;margin:0 auto;font-size:1.1rem">Open to PhD conversations, research collaborations at the AI–security intersection, and roles where technical depth meets human impact.</p>
+    <h2 class="big" data-reveal>Let's build technology that's <span class="em">fair</span>.</h2>
+    <p data-reveal style="color:var(--text-dim);max-width:580px;margin:0 auto;font-size:1.1rem">Open to PhD conversations and research collaborations in tech policy, ethics, computational social science, and human-centered AI.</p>
     <div class="contact-links" data-reveal>
       <a class="clink solid" href="mailto:gjuliusanu@gmail.com">✉ Email me</a>
       <a class="clink" href="https://www.linkedin.com/in/grace-julius/" target="_blank" rel="noopener">in · LinkedIn ↗</a>
@@ -402,9 +568,21 @@
 <footer>
   <div class="wrap foot-inner">
     <span>© <span id="yr"></span> Grace Anuoluwapo Julius — built &amp; maintained by me.</span>
-    <span>Lincoln University of Pennsylvania · Pursuing the PhD</span>
+    <span>Press <kbd>/</kbd> to jump anywhere</span>
   </div>
 </footer>
+
+<a class="to-top" id="toTop" href="#top" aria-label="Back to top">↑</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Quick navigation palette -->
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Quick navigation" hidden>
+  <div class="palette-box">
+    <input id="paletteInput" type="text" placeholder="Jump to a section, paper, or project…" autocomplete="off" spellcheck="false" aria-controls="paletteList">
+    <ul id="paletteList" role="listbox"></ul>
+    <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> go</span><span><kbd>esc</kbd> close</span></div>
+  </div>
+</div>
 
 <!-- ===== Scripts ===== -->
 <script src="js/script.js"></script>
