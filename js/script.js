@@ -236,7 +236,7 @@
     items.push({label:$('h3', p).textContent, kind:p.getAttribute('data-type')==='talk' ? 'Talk' : 'Paper', href:'#'+p.id});
   });
   var feat = $('.feature'); feat.id = 'theblip';
-  items.push({label:'TheBlip — SteelHacks', kind:'Project', href:'#theblip'});
+  items.push({label:'TheBlip — SteelHacks 2026', kind:'Project', href:'#theblip'});
   $$('#workGrid .card').forEach(function(c, i){
     if(!c.id) c.id = 'project-' + (i+1);
     items.push({label:$('h3', c).textContent, kind:'Project', href:'#'+c.id});
