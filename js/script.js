@@ -298,7 +298,7 @@
   function openPalette(){
     lastFocus = document.activeElement;
     palette.hidden = false; pInput.value = ''; sel = 0; render();
-    setTimeout(function(){ pInput.focus(); }, 0);
+    pInput.focus();
   }
   function closePalette(skipRestore){
     palette.hidden = true;

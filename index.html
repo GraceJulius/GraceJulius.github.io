@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js')</script>
 <title>Grace Julius — Tech Policy, Ethics &amp; Human-Centered AI</title>
 <meta name="description" content="Grace Julius — researcher at Lincoln University of Pennsylvania studying how technology systems succeed or fail the people they're built for, across tech policy, ethics, computational social science, and human-centered AI. NeurIPS 2026 workshop author; MIT MSRP 2026.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230a0b0d%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27monospace%27 font-size=%2726%27 font-weight=%27700%27 fill=%27%23ffb000%27 text-anchor=%27middle%27%3EGJ%3C/text%3E%3C/svg%3E">
 
 <!-- ===== Fonts ===== -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- ===== Styles ===== -->
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=2026-10-04c">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -55,14 +58,14 @@
 
 <!-- Section rail (desktop): a live table of contents -->
 <nav class="rail" id="rail" aria-label="Section index">
-  <a href="#hero" data-label="Intro"></a>
-  <a href="#about" data-label="About"></a>
-  <a href="#interests" data-label="Research interests"></a>
-  <a href="#publications" data-label="Publications &amp; talks"></a>
-  <a href="#work" data-label="Projects"></a>
-  <a href="#experience" data-label="Experience"></a>
-  <a href="#community" data-label="Leadership &amp; honors"></a>
-  <a href="#contact" data-label="Contact"></a>
+  <a href="#hero" data-label="Intro" aria-label="Intro"></a>
+  <a href="#about" data-label="About" aria-label="About"></a>
+  <a href="#interests" data-label="Research interests" aria-label="Research interests"></a>
+  <a href="#publications" data-label="Publications &amp; talks" aria-label="Publications &amp; talks"></a>
+  <a href="#work" data-label="Projects" aria-label="Projects"></a>
+  <a href="#experience" data-label="Experience" aria-label="Experience"></a>
+  <a href="#community" data-label="Leadership &amp; honors" aria-label="Leadership &amp; honors"></a>
+  <a href="#contact" data-label="Contact" aria-label="Contact"></a>
 </nav>
 
 <main id="main">
@@ -70,7 +73,13 @@
 
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <figure class="headshot" data-reveal>
+      <img src="assets/grace-headshot.jpg" alt="Headshot of Grace Julius" width="800" height="1000"
+           onerror="this.style.display='none';this.parentNode.classList.add('no-img')">
+      <span class="headshot-fallback" aria-hidden="true">GJ</span>
+    </figure>
+    <div class="hero-text">
     <div class="term" id="term" aria-hidden="true">
       <div class="bar"><i></i><i></i><i></i></div>
       <div class="ln" id="termText"></div>
@@ -94,7 +103,8 @@
     </div>
     <div class="currently" data-reveal>
       <span class="dot"></span>
-      Now: 2 NeurIPS 2026 workshop papers · MIT MSRP '26 alum · applying to PhD programs
+      Now: 2 NeurIPS 2026 workshop papers · MIT MSRP '26 alum &amp; campus ambassador · applying to PhD programs
+    </div>
     </div>
   </div>
   <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
@@ -104,26 +114,18 @@
 <section id="about">
   <div class="wrap">
     <p class="sec-tag" data-reveal>01 — About</p>
-    <h2 class="sec-title" data-reveal>Who does it <span class="em">serve</span>?</h2>
+    <h2 class="sec-title" data-reveal>Technology, with <span class="em">people</span> in mind.</h2>
     <div class="about-grid">
       <div class="about-body">
-        <p data-reveal>I'm a senior Computer Science major with a <b>minor in Philosophy</b> at <b>Lincoln University of Pennsylvania</b> — the nation's first degree-granting HBCU — carrying a <b>3.98 GPA</b>.</p>
-        <p data-reveal>I care about whether the technology we build is truly <b>considerate of human nature</b>, and about what happens behind the scenes when it isn't. That means bringing people into the design process, asking who gets access and who gets left out, and treating <b>justice and privacy</b> as design requirements rather than afterthoughts. My work sits across <b>tech policy, ethics, computational social science, and human-centered AI</b>.</p>
-        <p data-reveal>That thread runs through everything I've done: a campus phishing study that changed <b>university policy</b>; a survey of how students perceive the <b>fairness and equity</b> of AI; <b>TheBlip</b>, a scam-protection app that warns students in 29 languages because the people most likely to be scammed are often least served by English-only screens; and benchmarks at <b>MIT</b> and Lincoln that test what AI models can actually do — because accountability starts with honest evaluation.</p>
-        <p data-reveal>Philosophy gives me the vocabulary for the questions; computer science lets me test them. Next: a <b>PhD</b>. Off the clock — a camera or a tennis court.</p>
+        <p data-reveal>I'm a senior studying <b>Computer Science</b> with a minor in <b>Philosophy</b> at <b>Lincoln University of Pennsylvania</b>, the nation's first degree-granting HBCU.</p>
+        <p data-reveal>I'm interested in the <b>ethics and policy of technology</b>: how technology systems succeed or fail the people they're built for, especially marginalized communities and people with less access to technology. I want to understand what goes on behind the scenes of the tools we rely on, include people in the design process, and help make technology <b>fair, private, and accountable</b>.</p>
+        <p data-reveal>My research has approached this from several angles: phishing risks on my own campus, how students perceive the ethics of AI, and how well AI models actually perform on the tasks they're claimed to handle. I also build tools with the same goal, like <b>TheBlip</b>, a scam-protection app for students that works in 29 languages.</p>
       </div>
       <aside class="about-side" data-reveal>
-        <div class="portrait">
-          <img src="assets/grace.jpeg" alt="Portrait of Grace Julius"
-               onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://gracejulius.github.io/Images/Grace.jpeg';}else{this.style.display='none';this.parentNode.querySelector('.fallback').style.display='grid';}">
-          <div class="frame"></div>
-          <div class="fallback">GJ</div>
-        </div>
         <div class="facts">
           <div><span>Location</span><span>Lincoln University, PA</span></div>
           <div><span>Degree</span><span>B.S. Computer Science</span></div>
           <div><span>Minor</span><span>Philosophy</span></div>
-          <div><span>GPA</span><span>3.98</span></div>
           <div><span>Graduating</span><span>May 2027</span></div>
           <div><span>Next</span><span>PhD</span></div>
         </div>
@@ -131,10 +133,10 @@
     </div>
 
     <div class="stats">
-      <div class="stat" data-reveal><div class="n" data-count="2">0</div><div class="l">NeurIPS 2026 workshop papers (FMTS · MATH-AI)</div></div>
-      <div class="stat" data-reveal><div class="n" data-count="4">0</div><div class="l">accepted papers — NeurIPS workshops, SEET, ICTES</div></div>
-      <div class="stat" data-reveal><div class="n" data-count="3.98">0</div><div class="l">cumulative GPA in Computer Science</div></div>
-      <div class="stat" data-reveal><div class="n">MIT</div><div class="l">MSRP '26 research scholar, Media Lab</div></div>
+      <div class="stat" data-reveal><div class="n" data-count="2">2</div><div class="l">NeurIPS 2026 workshop papers (FMTS · MATH-AI)</div></div>
+      <div class="stat" data-reveal><div class="n" data-count="4">4</div><div class="l">accepted papers — NeurIPS workshops, SEET, ICTES</div></div>
+      <div class="stat" data-reveal><div class="n" data-count="29">29</div><div class="l">languages TheBlip protects students in</div></div>
+      <div class="stat" data-reveal><div class="n">MIT</div><div class="l">MSRP '26 research scholar &amp; campus ambassador</div></div>
     </div>
   </div>
 </section>
@@ -441,7 +443,7 @@
         <div class="when">May 2025 – Present</div>
         <h3>Student IT Technician</h3>
         <div class="org">Office of Information Technology · Lincoln University</div>
-        <p>Resolve hardware, software, and network tickets across campus; and manage institutional web content via Cascade CMS.</p>
+        <p>Resolve hardware, software, and network tickets across campus, and manage institutional web content via Cascade CMS.</p>
       </div>
 
       <div class="tl" data-reveal>
@@ -473,6 +475,10 @@
         <div class="lead-item">
           <span class="role">2026 – Now</span>
           <div><h4>President — NSBE, Lincoln Chapter</h4><p>Leading Lincoln's National Society of Black Engineers chapter.</p></div>
+        </div>
+        <div class="lead-item">
+          <span class="role">2026 – Now</span>
+          <div><h4>Campus Ambassador — MIT Summer Research Program</h4><p>Selected as a campus ambassador for MIT's Summer Research Program at Lincoln University.</p></div>
         </div>
         <div class="lead-item">
           <span class="role">2026</span>
@@ -585,6 +591,6 @@
 </div>
 
 <!-- ===== Scripts ===== -->
-<script src="js/script.js"></script>
+<script src="js/script.js?v=2026-10-04c"></script>
 </body>
 </html>
