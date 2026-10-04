@@ -1,2 +1,2 @@
-Add your portrait here as: grace.jpg  (roughly 4:5 portrait crop looks best)
+grace-headshot.jpg is the hero headshot (4:5 crop, 800x1000).
 resume.pdf is your current résumé — swap it anytime, keep the filename.
